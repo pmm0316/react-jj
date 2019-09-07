@@ -1,26 +1,23 @@
+/*
+ * @Description: In User Settings Edit
+ * @Author: your name
+ * @Date: 2019-08-15 23:35:21
+ * @LastEditTime: 2019-09-07 09:16:24
+ * @LastEditors: Please set LastEditors
+ */
 import React from 'react';
-import logo from './logo.svg';
+// import PostList from './view/PostList'
+import ListComponent from './view/03/ListComponent'
+import StringComponent from './view/03/StringComponent'
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return [
+    <ul>
+      <ListComponent/>
+    </ul>,
+    <StringComponent/>
+  ];
 }
 
 export default App;
